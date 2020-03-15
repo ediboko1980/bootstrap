@@ -25,7 +25,7 @@ publishDir:             "_gh_pages"
 module:
   mounts:
     - source:           dist
-      target:           static/docs/dist
+      target:           static/dist
     - source:           site/assets
       target:           assets
     - source:           site/content
@@ -36,16 +36,16 @@ module:
       target:           layouts
     - source:           site/static
       target:           static
-    - source:           site/static/docs/assets/img/favicons/apple-touch-icon.png
+    - source:           site/static/assets/img/favicons/apple-touch-icon.png
       target:           static/apple-touch-icon.png
-    - source:           site/static/docs/assets/img/favicons/favicon.ico
+    - source:           site/static/assets/img/favicons/favicon.ico
       target:           static/favicon.ico
 
 params:
   description:          "SaaS Bootstrap Template Documentation"
   authors:              "Themesberg"
-  social_image_path:    /docs/assets/brand/bootstrap-social.png
-  social_logo_path:     /docs/assets/brand/bootstrap-social-logo.png
+  social_image_path:    /assets/brand/bootstrap-social.png
+  social_logo_path:     /assets/brand/bootstrap-social-logo.png
 
   product_page: "https://themesberg.com/product/bootstrap-themes/rocket-saas-bootstrap-template"
   live_preview: "https://demo.themesberg.com/rocket/index.html"

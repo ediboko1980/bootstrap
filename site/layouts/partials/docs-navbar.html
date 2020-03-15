@@ -1,23 +1,14 @@
 <header class="navbar navbar-expand navbar-dark navbar-theme-primary">
   <div class="container-xl flex-wrap flex-md-nowrap">
-    <a class="navbar-brand mr-4" href="/" aria-label="Rocket Documentation">
-      <img src="/docs/assets/brand/rocket.svg" width="30" height="30" alt="Rocket logo">
+    <a class="navbar-brand mr-4" href="./getting-started/introduction/" aria-label="Rocket Documentation">
+      <img src="/assets/brand/rocket.svg" width="30" height="30" alt="Rocket logo">
       <span class="ml-2">Rocket docs</span>
     </a>
 
     <div class="navbar-nav-scroll order-3 order-md-0 d-flex justify-content-center justify-content-md-start">
       <ul class="navbar-nav bd-navbar-nav flex-row">
         <li class="nav-item">
-          <a class="nav-link{{ if .IsHome }} active" aria-current="page{{ end }}" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link{{ if eq .Page.Layout "docs" }} active" aria-current="true{{ end }}" href="/docs/getting-started/introduction/">Docs</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link{{ if eq .Page.Title "Pages" }} active" aria-current="true{{ end }}" href="/docs/pages/">Pages</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{ .Site.Params.themes }}" target="_blank" rel="noopener">Themes</a>
+          <a class="nav-link{{ if eq .Page.Layout "docs" }} active" aria-current="true{{ end }}" href="./getting-started/introduction/">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{ .Site.Params.blog }}" target="_blank" rel="noopener">Blog</a>
@@ -38,6 +29,6 @@
       </li>
     </ul>
     <a class="btn btn-md btn-secondary animate-up-2 ml-3" href="{{ .Site.Params.product_page }}" target="_blank">Download</a>
-    <a class="btn btn-md btn-outline-white animate-up-2 ml-3" href="{{ .Site.Params.live_preview }}" target="_blank">Live Preview</a>
+    <a class="btn btn-md btn-outline-white animate-up-2 ml-3" href="{{ .Site.Params.live_preview }}" target="_blank">Demo Rocket</a>
   </div>
 </header>

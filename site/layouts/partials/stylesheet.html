@@ -1,12 +1,12 @@
 {{- "<!-- Bootstrap core CSS -->" | safeHTML }}
 {{ if eq hugo.Environment "production" -}}
-<link href="/docs/dist/css/bootstrap.min.css" rel="stylesheet" integrity="{{ .Site.Params.cdn.css_hash }}" crossorigin="anonymous">
+<link href="/dist/css/bootstrap.min.css" rel="stylesheet" integrity="{{ .Site.Params.cdn.css_hash }}" crossorigin="anonymous">
 {{- else -}}
-<link href="/docs/dist/css/bootstrap.css" rel="stylesheet">
+<link href="/dist/css/bootstrap.css" rel="stylesheet">
 {{- end }}
 
 {{- if (ne .Page.Layout "examples") }}
-{{- $targetDocsCssPath := printf "/docs/%s/assets/css/docs.css" .Site.Params.docs_version -}}
+{{- $targetDocsCssPath := printf "/assets/css/docs.css" -}}
 {{- $sassOptions := dict "targetPath" $targetDocsCssPath "precision" 6 -}}
 {{- $postcssOptions := dict "use" "autoprefixer" "noMap" true -}}
 

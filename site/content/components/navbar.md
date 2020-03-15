@@ -104,7 +104,7 @@ Adding images to the `.navbar-brand` will likely always require custom styles or
 <nav class="navbar navbar-light bg-soft">
   <div class="container">
     <a class="navbar-brand" href="#">
-      <img src="/docs/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="" loading="lazy">
+      <img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="" loading="lazy">
     </a>
   </div>
 </nav>
@@ -115,7 +115,7 @@ Adding images to the `.navbar-brand` will likely always require custom styles or
 <nav class="navbar navbar-light bg-soft">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="/docs/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+      <img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
       Bootstrap
     </a>
   </div>

@@ -1,7 +1,7 @@
 {{ if eq hugo.Environment "production" -}}
-  <script src="/docs/dist/js/bootstrap.bundle.min.js" integrity="{{ .Site.Params.cdn.js_bundle_hash }}" crossorigin="anonymous"></script>
+  <script src="/dist/js/bootstrap.bundle.min.js" integrity="{{ .Site.Params.cdn.js_bundle_hash }}" crossorigin="anonymous"></script>
 {{ else -}}
-  <script src="/docs/dist/js/bootstrap.bundle.js"></script>
+  <script src="/dist/js/bootstrap.bundle.js"></script>
 {{- end }}
 
 {{ if eq .Page.Layout "docs" -}}

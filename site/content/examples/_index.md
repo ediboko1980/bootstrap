@@ -17,7 +17,7 @@ aliases: "/examples/"
         <a href="/docs/examples/{{ $example.name | urlize }}/">
           <img class="img-thumbnail mb-3" srcset="/docs/assets/img/examples/{{ $example.name | urlize }}.png,
                                                   /docs/assets/img/examples/{{ $example.name | urlize }}@2x.png 2x"
-                                          src="/docs/assets/img/examples/{{ $example.name | urlize }}.png"
+                                          src="/assets/img/examples/{{ $example.name | urlize }}.png"
                                           alt="{{ $example.name }} screenshot"
                                           width="480" height="300"
                                           loading="lazy">

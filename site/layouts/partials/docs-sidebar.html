@@ -25,7 +25,7 @@
         {{- range $doc := $group.pages -}}
           {{- $doc_slug := $doc.title | urlize }}
           <li{{ if and $active_group (eq $page_slug $doc_slug) }} class="active bd-sidenav-active"{{ end }}>
-            <a href="/docs/{{ $group_slug }}/{{ $doc_slug }}/"{{ if and $active_group (eq $page_slug $doc_slug) }} aria-current="page"{{ end }}>
+            <a href="/{{ $group_slug }}/{{ $doc_slug }}/"{{ if and $active_group (eq $page_slug $doc_slug) }} aria-current="page"{{ end }}>
               {{- $doc.title -}}
             </a>
           </li>
