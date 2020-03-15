@@ -5,6 +5,14 @@
 .bd-content {
   order: 1;
 
+  > h1,
+  > h2,
+  > h3,
+  > h4,
+  > h5,
+  > h6 {
+    margin-bottom: 1.2rem;
+  }
   // Offset for the sticky header
   > [id] {
     @include media-breakpoint-up(md) {
@@ -22,7 +30,7 @@
 
   > ul li,
   > ol li {
-    margin-bottom: .25rem;
+    margin-bottom: .45rem;
   }
 
   // Override Bootstrap defaults

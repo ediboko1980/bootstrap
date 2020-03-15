@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Introduction
-description: Get started with Bootstrap, the world's most popular framework for building responsive, mobile-first sites, with BootstrapCDN and a template starter page.
+description: This guide will help you to set up and work with this theme.
 group: getting-started
 aliases:
   - "/docs/4.3/getting-started/"
@@ -10,119 +10,60 @@ aliases:
 toc: true
 ---
 
-## Quick start
+## How to set up the project
 
-Looking to quickly add Bootstrap to your project? Use BootstrapCDN, provided for free by the folks at StackPath. Using a package manager or need to download the source files? [Head to the downloads page]({{< docsref "/getting-started/download" >}}).
+This template requires Node and Gulp CLI. Please follow these steps to install the required technologies:
 
-### CSS
+1. Make sure you have Node locally installed.
+2. Download Gulp Command Line Interface to be able to use gulp in your Terminal.
 
-Copy-paste the stylesheet `<link>` into your `<head>` before all other stylesheets to load our CSS.
-
-{{< highlight html >}}
-<link rel="stylesheet" href="{{< param "cdn.css" >}}" integrity="{{< param "cdn.css_hash" >}}" crossorigin="anonymous">
+{{< highlight bash >}}
+npm install gulp-cli -g
 {{< /highlight >}}
 
-### JS
+3. After installing Gulp, run npm install in the main `rocket/` folder to download all the project dependencies. You'll find them in the `node_modules/` folder.
 
-Many of our components require the use of JavaScript to function. Specifically, they require our own JavaScript plugins and [Popper.js](https://popper.js.org/). Place the following `<script>`s near the end of your pages, right before the closing `</body>` tag, to enable them. Popper.js must come first, and then our JavaScript plugins.
-
-{{< highlight html >}}
-<script src="{{< param "cdn.popper" >}}" integrity="{{< param "cdn.popper_hash" >}}" crossorigin="anonymous"></script>
-<script src="{{< param "cdn.js" >}}" integrity="{{< param "cdn.js_hash" >}}" crossorigin="anonymous"></script>
+{{< highlight bash >}}
+npm install
 {{< /highlight >}}
 
-If you use `<script type="module">`, please refer to our [using Bootstrap as a module]({{< docsref "/getting-started/javascript#using-bootstrap-as-a-module" >}}) section.
+4. Run gulp in the `pixel/` folder to serve the project files using BrowserSync. Running gulp will compile the theme and open `/index.html` in your main browser.
 
-Curious which components explicitly require our JavaScript and Popper.js? Click the show components link below. If you're at all unsure about the general page structure, keep reading for an example page template.
-
-Our `bootstrap.bundle.js` and `bootstrap.bundle.min.js` include [Popper](https://popper.js.org/). For more information about what's included in Bootstrap, please see our [contents]({{< docsref "/getting-started/contents#precompiled-bootstrap" >}}) section.
-
-{{< partial "getting-started/components-requiring-javascript" >}}
-
-## Starter template
-
-Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Put it all together and your pages should look like this:
-
-{{< highlight html >}}
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{{< param "cdn.css" >}}" integrity="{{< param "cdn.css_hash" >}}" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-
-    <!-- Optional JavaScript -->
-    <!-- Popper.js first, then Bootstrap JS -->
-    <script src="{{< param "cdn.popper" >}}" integrity="{{< param "cdn.popper_hash" >}}" crossorigin="anonymous"></script>
-    <script src="{{< param "cdn.js" >}}" integrity="{{< param "cdn.js_hash" >}}" crossorigin="anonymous"></script>
-  </body>
-</html>
+{{< highlight bash >}}
+gulp
 {{< /highlight >}}
 
-That's all you need for overall page requirements. Visit the [Layout docs]({{< docsref "/layout/overview" >}}) or [our official examples]({{< docsref "/examples" >}}) to start laying out your site's content and components.
+While the gulp command is running, files in the `assets/scss/`, `assets/js/` and `components/` folders will be monitored for changes. Files from the `assets/scss/` folder will generate injected CSS.
 
-## Important globals
+Hit `CTRL+C` to terminate the gulp command. This will stop the local server from running.
 
-Bootstrap employs a handful of important global styles and settings that you'll need to be aware of when using it, all of which are almost exclusively geared towards the *normalization* of cross browser styles. Let's dive in.
+## Theme without Sass, Gulp or Npm
 
-### HTML5 doctype
+If you'd like to get a version of our theme without Sass, Gulp or Npm, we've got you covered. Run the following command:
 
-Bootstrap requires the use of the HTML5 doctype. Without it, you'll see some funky incomplete styling, but including it shouldn't cause any considerable hiccups.
-
-{{< highlight html >}}
-<!doctype html>
-<html lang="en">
-  ...
-</html>
+{{< highlight bash >}}
+gulp build:dev
 {{< /highlight >}}
 
-### Responsive meta tag
+This will generate a folder `html&css` which will have unminified CSS, Html and Javascript.
 
-Bootstrap is developed *mobile first*, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming for all devices, **add the responsive viewport meta tag** to your `<head>`.
+## Minified version
 
-{{< highlight html >}}
-<meta name="viewport" content="width=device-width, initial-scale=1">
+If you'd like to compile the code and get a minified version of the HTML and CSS just run the following Gulp command:
+
+{{< highlight bash >}}
+gulp build:dist
 {{< /highlight >}}
 
-You can see an example of this in action in the [starter template](#starter-template).
+This will generate a folder `dist` which will have minified CSS, Html and Javascript.
 
-### Box-sizing
+## Getting support
 
-For more straightforward sizing in CSS, we switch the global `box-sizing` value from `content-box` to `border-box`. This ensures `padding` does not affect the final computed width of an element, but it can cause problems with some third party software like Google Maps and Google Custom Search Engine.
-
-On the rare occasion you need to override it, use something like the following:
-
-{{< highlight css >}}
-.selector-for-some-widget {
-  box-sizing: content-box;
-}
-{{< /highlight >}}
-
-With the above snippet, nested elements—including generated content via `::before` and `::after`—will all inherit the specified `box-sizing` for that `.selector-for-some-widget`.
-
-Learn more about [box model and sizing at CSS Tricks](https://css-tricks.com/box-sizing/).
-
-### Reboot
-
-For improved cross-browser rendering, we use [Reboot]({{< docsref "/content/reboot" >}}) to correct inconsistencies across browsers and devices while providing slightly more opinionated resets to common HTML elements.
+We offer 6 months of support by default for each purchased template. Please [Contact us](https://themesberg.com/contact) and we'll get back to you in no time!
 
 ## Community
 
-Stay up to date on the development of Bootstrap and reach out to the community with these helpful resources.
-
-- Follow [@getbootstrap on Twitter](https://twitter.com/{{< param twitter >}}).
-- Read and subscribe to [The Official Bootstrap Blog]({{< param blog >}}).
-- Join [the official Slack room]({{< param slack >}}).
-- Chat with fellow Bootstrappers in IRC. On the `irc.freenode.net` server, in the `##bootstrap` channel.
-- Implementation help may be found at Stack Overflow (tagged [`bootstrap-4`](https://stackoverflow.com/questions/tagged/bootstrap-4)).
-- Developers should use the keyword `bootstrap` on packages which modify or add to the functionality of Bootstrap when distributing through [npm](https://www.npmjs.com/search?q=keywords:bootstrap) or similar delivery mechanisms for maximum discoverability.
-
-You can also follow [@getbootstrap on Twitter](https://twitter.com/{{< param twitter >}}) for the latest gossip and awesome music videos.
+- Follow [@themesberg on Twitter](https://twitter.com/{{< param twitter >}}).
+- Follow [Themesberg on Facebook](https://facebook.com/{{< param facebook >}}).
+- Read and subscribe to [The Official Themesberg Blog]({{< param blog >}}).
+- Follow latest open source projects on our [Github Page]({{< param repo >}})
