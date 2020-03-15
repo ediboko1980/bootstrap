@@ -1,5 +1,5 @@
 languageCode:           "en"
-title:                  "Rocket"
+title:                  "Rocket Docs"
 baseURL:                "https://themesberg.com"
 enableInlineShortcodes: true
 
@@ -42,7 +42,7 @@ module:
       target:           static/favicon.ico
 
 params:
-  description:          "The most popular HTML, CSS, and JS library in the world."
+  description:          "SaaS Bootstrap Template Documentation"
   authors:              "Themesberg"
   social_image_path:    /docs/assets/brand/bootstrap-social.png
   social_logo_path:     /docs/assets/brand/bootstrap-social-logo.png

@@ -1007,7 +1007,7 @@ describe('Dropdown', () => {
 
     it('should not use popper.js in navbar', done => {
       fixtureEl.innerHTML = [
-        '<nav class="navbar navbar-expand-md navbar-light bg-light">',
+        '<nav class="navbar navbar-expand-md navbar-light bg-soft">',
         '  <div class="dropdown">',
         '    <button class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown</button>',
         '    <div class="dropdown-menu">',

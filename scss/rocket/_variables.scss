@@ -260,7 +260,7 @@ $transition-tabs:             all 0.2s;
 $fontawesome-webfonts-path:   '../vendor/font-awesome/webfonts';
 $font-family-base:            'Nunito Sans', sans-serif;
 $font-family-headers:         'Nunito Sans', sans-serif;
-$font-family-blockquote:      'Lora', serif;
+$font-family-blockquote:      'Nunito Sans', serif;
 $font-awesome-5:              'Font Awesome 5 Free';
 $font-size-base:              1rem; // Assumes the browser default, typically `16px`
 $font-size-xxl:               ($font-size-base * 2);
@@ -322,8 +322,8 @@ $display3-weight:             $font-weight-bolder;
 $display4-weight:             $font-weight-bolder;
 $display-line-height:         $headings-line-height;
 
-$paragraph-font-size:         1rem;
-$paragraph-font-weight:       $font-weight-normal;
+$paragraph-font-size:         1.2rem;
+$paragraph-font-weight:       $font-weight-base;
 $paragraph-line-height:       1.6;
 
 $lead-font-size:              ($paragraph-font-size * 1.25);
@@ -467,7 +467,7 @@ $btn-line-height-lg:          $input-btn-line-height-lg;
 $btn-border-width:            $border-width;
 
 $btn-font-size:               $font-size-base;
-$btn-font-weight:             $font-weight-bold;
+$btn-font-weight:             $font-weight-normal;
 $btn-text-transform:          uppercase;
 $btn-letter-spacing:          .025em;
 $btn-box-shadow:              $box-shadow-sm;

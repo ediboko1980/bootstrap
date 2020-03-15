@@ -28,7 +28,7 @@ To encourage extensible and predictable toasts, we recommend a header and body. 
 
 Toasts are as flexible as you need and have very little required markup. At a minimum, we require a single element to contain your "toasted" content and strongly encourage a dismiss button.
 
-{{< example class="bg-light" >}}
+{{< example class="bg-soft" >}}
 <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="toast-header">
     {{< placeholder width="20" height="20" background="#007aff" class="rounded mr-2" text="false" title="false" >}}
@@ -68,7 +68,7 @@ Toasts are slightly translucent, too, so they blend over whatever they might app
 
 When you have multiple toasts, we default to vertically stacking them in a readable manner.
 
-{{< example class="bg-light" >}}
+{{< example class="bg-soft" >}}
 <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="toast-header">
     {{< placeholder width="20" height="20" background="#007aff" class="rounded mr-2" text="false" title="false" >}}
@@ -200,7 +200,7 @@ As the content you're displaying changes, be sure to update the [`delay` timeout
 
 When using `autohide: false`, you must add a close button to allow users to dismiss the toast.
 
-{{< example class="bg-light" >}}
+{{< example class="bg-soft" >}}
 <div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-autohide="false">
   <div class="toast-header">
     {{< placeholder width="20" height="20" background="#007aff" class="rounded mr-2" text="false" title="false" >}}

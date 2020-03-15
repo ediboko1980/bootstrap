@@ -392,10 +392,10 @@ $gutters: (
 <div class="container px-4">
   <div class="row gx-5">
     <div class="col">
-     <div class="p-3 border bg-light">Custom column padding</div>
+     <div class="p-3 border bg-soft">Custom column padding</div>
     </div>
     <div class="col">
-      <div class="p-3 border bg-light">Custom column padding</div>
+      <div class="p-3 border bg-soft">Custom column padding</div>
     </div>
   </div>
 </div>
@@ -407,10 +407,10 @@ An alternative solution is to add a wrapper around the `.row` with the `.overflo
 <div class="container overflow-hidden">
   <div class="row gx-5">
     <div class="col">
-     <div class="p-3 border bg-light">Custom column padding</div>
+     <div class="p-3 border bg-soft">Custom column padding</div>
     </div>
     <div class="col">
-      <div class="p-3 border bg-light">Custom column padding</div>
+      <div class="p-3 border bg-soft">Custom column padding</div>
     </div>
   </div>
 </div>
@@ -424,16 +424,16 @@ An alternative solution is to add a wrapper around the `.row` with the `.overflo
 <div class="container overflow-hidden">
   <div class="row gy-5">
     <div class="col-6">
-      <div class="p-3 border bg-light">Custom column padding</div>
+      <div class="p-3 border bg-soft">Custom column padding</div>
     </div>
     <div class="col-6">
-      <div class="p-3 border bg-light">Custom column padding</div>
+      <div class="p-3 border bg-soft">Custom column padding</div>
     </div>
     <div class="col-6">
-      <div class="p-3 border bg-light">Custom column padding</div>
+      <div class="p-3 border bg-soft">Custom column padding</div>
     </div>
     <div class="col-6">
-      <div class="p-3 border bg-light">Custom column padding</div>
+      <div class="p-3 border bg-soft">Custom column padding</div>
     </div>
   </div>
 </div>
@@ -447,16 +447,16 @@ An alternative solution is to add a wrapper around the `.row` with the `.overflo
 <div class="container">
   <div class="row g-2">
     <div class="col-6">
-      <div class="p-3 border bg-light">Custom column padding</div>
+      <div class="p-3 border bg-soft">Custom column padding</div>
     </div>
     <div class="col-6">
-      <div class="p-3 border bg-light">Custom column padding</div>
+      <div class="p-3 border bg-soft">Custom column padding</div>
     </div>
     <div class="col-6">
-      <div class="p-3 border bg-light">Custom column padding</div>
+      <div class="p-3 border bg-soft">Custom column padding</div>
     </div>
     <div class="col-6">
-      <div class="p-3 border bg-light">Custom column padding</div>
+      <div class="p-3 border bg-soft">Custom column padding</div>
     </div>
   </div>
 </div>
@@ -470,34 +470,34 @@ Gutter classes can also be added to [row columns](#row-columns). In the followin
 <div class="container">
   <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
     <div class="col">
-      <div class="p-3 border bg-light">Row column</div>
+      <div class="p-3 border bg-soft">Row column</div>
     </div>
     <div class="col">
-      <div class="p-3 border bg-light">Row column</div>
+      <div class="p-3 border bg-soft">Row column</div>
     </div>
     <div class="col">
-      <div class="p-3 border bg-light">Row column</div>
+      <div class="p-3 border bg-soft">Row column</div>
     </div>
     <div class="col">
-      <div class="p-3 border bg-light">Row column</div>
+      <div class="p-3 border bg-soft">Row column</div>
     </div>
     <div class="col">
-      <div class="p-3 border bg-light">Row column</div>
+      <div class="p-3 border bg-soft">Row column</div>
     </div>
     <div class="col">
-      <div class="p-3 border bg-light">Row column</div>
+      <div class="p-3 border bg-soft">Row column</div>
     </div>
     <div class="col">
-      <div class="p-3 border bg-light">Row column</div>
+      <div class="p-3 border bg-soft">Row column</div>
     </div>
     <div class="col">
-      <div class="p-3 border bg-light">Row column</div>
+      <div class="p-3 border bg-soft">Row column</div>
     </div>
     <div class="col">
-      <div class="p-3 border bg-light">Row column</div>
+      <div class="p-3 border bg-soft">Row column</div>
     </div>
     <div class="col">
-      <div class="p-3 border bg-light">Row column</div>
+      <div class="p-3 border bg-soft">Row column</div>
     </div>
   </div>
 </div>
@@ -804,10 +804,10 @@ To nest your content with the default grid, add a new `.row` and set of `.col-sm
 The `.col-*` classes can also be used outside a `.row` to give an element a specific width. Whenever column classes are used as non direct children of a row, the paddings are omitted.
 
 {{< example >}}
-<div class="col-3 bg-light p-3 border">
+<div class="col-3 bg-soft p-3 border">
   .col-3: width of 25%
 </div>
-<div class="col-sm-9 bg-light p-3 border">
+<div class="col-sm-9 bg-soft p-3 border">
   .col-sm-9: width of 75% above sm breakpoint
 </div>
 {{< /example >}}
