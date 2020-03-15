@@ -14,18 +14,18 @@
   "homepage": "https://getbootstrap.com/",
   "authors": [
     {
-      "name": "Mark Otto",
-      "email": "markdotto@gmail.com"
+      "name": "Zoltan Szogyenyi",
+      "email": "zoltan@themesberg.com"
     },
     {
-      "name": "Jacob Thornton",
-      "email": "jacobthornton@gmail.com"
+      "name": "Robert Tanislav",
+      "email": "robert@themesberg.com"
     }
   ],
   "support": {
-    "issues": "https://github.com/twbs/bootstrap/issues"
+    "issues": "https://themesberg.com/contact"
   },
-  "license": "MIT",
+  "license": "Themesberg License",
   "replace": {
     "twitter/bootstrap": "self.version"
   }
