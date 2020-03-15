@@ -1,6 +1,6 @@
 languageCode:           "en"
-title:                  "Bootstrap"
-baseURL:                "https://getbootstrap.com"
+title:                  "Rocket"
+baseURL:                "https://themesberg.com"
 enableInlineShortcodes: true
 
 markup:
@@ -47,17 +47,17 @@ params:
   social_image_path:    /docs/4.3/assets/brand/bootstrap-social.png
   social_logo_path:     /docs/4.3/assets/brand/bootstrap-social-logo.png
 
-  current_version:      "4.3.1"
+  current_version:      "1.0.0"
   current_ruby_version: "4.3.1"
   rfs_version:          "9.0.2"
   docs_version:         "4.3"
   repo:                 "https://github.com/twbs/bootstrap"
-  twitter:              "getbootstrap"
+  twitter:              "themesberg"
   slack:                "https://bootstrap-slack.herokuapp.com/"
   opencollective:       "https://opencollective.com/bootstrap"
-  blog:                 "https://blog.getbootstrap.com/"
+  blog:                 "https://themesberg.com/blog"
   expo:                 "https://expo.getbootstrap.com/"
-  themes:               "https://themes.getbootstrap.com/"
+  themes:               "https://themesberg.com/products/bootstrap-themes"
   icons:                "https://icons.getbootstrap.com/"
 
   download:
