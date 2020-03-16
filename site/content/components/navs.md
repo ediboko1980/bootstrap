@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Navs
-description: Documentation and examples for how to use Bootstrap's included navigation components.
+description: Documentation and examples for how to use Rocket's included navigation components.
 group: components
 toc: true
 ---

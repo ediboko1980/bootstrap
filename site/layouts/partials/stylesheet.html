@@ -1,9 +1,6 @@
 {{- "<!-- Bootstrap core CSS -->" | safeHTML }}
-{{ if eq hugo.Environment "production" -}}
-<link href="/dist/css/bootstrap.min.css" rel="stylesheet" integrity="{{ .Site.Params.cdn.css_hash }}" crossorigin="anonymous">
-{{- else -}}
-<link href="/dist/css/bootstrap.css" rel="stylesheet">
-{{- end }}
+
+<link rel="stylesheet" href="{{ .Site.BaseURL }}assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
 
 {{- if (ne .Page.Layout "examples") }}
 {{- $targetDocsCssPath := printf "/assets/css/docs.css" -}}

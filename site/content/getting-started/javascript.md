@@ -8,7 +8,7 @@ toc: true
 
 ## Individual or compiled
 
-Plugins can be included individually (using Bootstrap's individual `js/dist/*.js`), or all at once using `bootstrap.js` or the minified `bootstrap.min.js` (don't include both).
+Plugins can be included individually (using Rocket's individual `js/dist/*.js`), or all at once using `bootstrap.js` or the minified `bootstrap.min.js` (don't include both).
 
 If you use a bundler (Webpack, Rollup...), you can use `/js/dist/*.js` files which are UMD ready.
 
@@ -71,7 +71,7 @@ myModal.addEventListener('show.bs.modal', function (e) {
 {{< callout warning >}}
 ## jQuery events
 
-Bootstrap will detect jQuery if `jQuery` is present in the `window` object and there is no `data-no-jquery` attribute set on `<body>`. If jQuery is found, Bootstrap will emit events thanks to jQuery's event system. So if you want to listen to Bootstrap's events, you'll have to use the jQuery methods (`.on`, `.one`) instead of `addEventListener`.
+Bootstrap will detect jQuery if `jQuery` is present in the `window` object and there is no `data-no-jquery` attribute set on `<body>`. If jQuery is found, Bootstrap will emit events thanks to jQuery's event system. So if you want to listen to Rocket's events, you'll have to use the jQuery methods (`.on`, `.one`) instead of `addEventListener`.
 
 {{< highlight js >}}
 $('#myTab a').on('shown.bs.tab', function () {
@@ -141,7 +141,7 @@ $.fn.bootstrapBtn = bootstrapButton // give $().bootstrapBtn the Bootstrap funct
 
 ## Version numbers
 
-The version of each of Bootstrap's plugins can be accessed via the `VERSION` property of the plugin's constructor. For example, for the tooltip plugin:
+The version of each of Rocket's plugins can be accessed via the `VERSION` property of the plugin's constructor. For example, for the tooltip plugin:
 
 {{< highlight js >}}
 bootstrap.Tooltip.VERSION // => "{{< param current_version >}}"
@@ -149,7 +149,7 @@ bootstrap.Tooltip.VERSION // => "{{< param current_version >}}"
 
 ## No special fallbacks when JavaScript is disabled
 
-Bootstrap's plugins don't fall back particularly gracefully when JavaScript is disabled. If you care about the user experience in this case, use [`<noscript>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript) to explain the situation (and how to re-enable JavaScript) to your users, and/or add your own custom fallbacks.
+Rocket's plugins don't fall back particularly gracefully when JavaScript is disabled. If you care about the user experience in this case, use [`<noscript>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript) to explain the situation (and how to re-enable JavaScript) to your users, and/or add your own custom fallbacks.
 
 {{< callout warning >}}
 ##### Third-party libraries

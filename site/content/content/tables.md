@@ -8,7 +8,7 @@ toc: true
 
 ## Overview
 
-Due to the widespread use of `<table>` elements across third-party widgets like calendars and date pickers, Bootstrap's tables are **opt-in**. Add the base class `.table` to any `<table>`, then extend with our optional modifier classes or custom styles. **All table styles are inherited in Bootstrap**, meaning any nested tables will be styled in the same manner as the parent.
+Due to the widespread use of `<table>` elements across third-party widgets like calendars and date pickers, Rocket's tables are **opt-in**. Add the base class `.table` to any `<table>`, then extend with our optional modifier classes or custom styles. **All table styles are inherited in Bootstrap**, meaning any nested tables will be styled in the same manner as the parent.
 
 Using the most basic table markup, here's how `.table`-based tables look in Bootstrap.
 

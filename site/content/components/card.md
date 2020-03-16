@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Cards
-description: Bootstrap's cards provide a flexible and extensible content container with multiple variants and options.
+description: Rocket's cards provide a flexible and extensible content container with multiple variants and options.
 group: components
 toc: true
 ---
@@ -283,7 +283,7 @@ You can quickly change the text alignment of any card—in its entirety or speci
 
 ## Navigation
 
-Add some navigation to a card's header (or block) with Bootstrap's [nav components]({{< docsref "/components/navs" >}}).
+Add some navigation to a card's header (or block) with Rocket's [nav components]({{< docsref "/components/navs" >}}).
 
 {{< example >}}
 <div class="card text-center">

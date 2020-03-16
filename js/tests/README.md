@@ -1,4 +1,4 @@
-## How does Bootstrap's test suite work?
+## How does Rocket's test suite work?
 
 Bootstrap uses [Jasmine](https://jasmine.github.io/). Each plugin has a file dedicated to its tests in `tests/unit/<plugin-name>.spec.js`.
 

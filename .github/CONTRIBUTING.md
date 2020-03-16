@@ -137,7 +137,7 @@ directly!** Those files are automatically generated. You should edit the
 source files in [`/bootstrap/scss/`](https://github.com/twbs/bootstrap/tree/master/scss)
 and/or [`/bootstrap/js/src/`](https://github.com/twbs/bootstrap/tree/master/js/src) instead.
 
-Similarly, when contributing to Bootstrap's documentation, you should edit the
+Similarly, when contributing to Rocket's documentation, you should edit the
 documentation source files in
 [the `/bootstrap/site/content/docs/` directory of the `master` branch](https://github.com/twbs/bootstrap/tree/master/site/content/docs).
 **Do not edit the `gh-pages` branch.** That branch is generated from the
@@ -234,4 +234,4 @@ Run `npm run test` before committing to ensure your changes follow our coding st
 By contributing your code, you agree to license your contribution under the [MIT License](../LICENSE).
 By contributing to the documentation, you agree to license your contribution under the [Creative Commons Attribution 3.0 Unported License](https://creativecommons.org/licenses/by/3.0/).
 
-Prior to v3.1.0, Bootstrap's code was released under the Apache License v2.0.
+Prior to v3.1.0, Rocket's code was released under the Apache License v2.0.

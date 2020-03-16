@@ -149,7 +149,7 @@ alert.close()
 
 ### Events
 
-Bootstrap's alert plugin exposes a few events for hooking into alert functionality.
+Rocket's alert plugin exposes a few events for hooking into alert functionality.
 
 <table class="table">
   <thead>

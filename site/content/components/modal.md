@@ -1,14 +1,14 @@
 ---
 layout: docs
 title: Modal
-description: Use Bootstrap's JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.
+description: Use Rocket's JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.
 group: components
 toc: true
 ---
 
 ## How it works
 
-Before getting started with Bootstrap's modal component, be sure to read the following as our menu options have recently changed.
+Before getting started with Rocket's modal component, be sure to read the following as our menu options have recently changed.
 
 - Modals are built with HTML, CSS, and JavaScript. They're positioned over everything else in the document and remove scroll from the `<body>` so that modal content scrolls instead.
 - Clicking on the modal "backdrop" will automatically close the modal.
@@ -890,7 +890,7 @@ var modal = bootstrap.Modal.getInstance(myModalEl) // Returns a Bootstrap modal 
 
 ### Events
 
-Bootstrap's modal class exposes a few events for hooking into modal functionality. All modal events are fired at the modal itself (i.e. at the `<div class="modal">`).
+Rocket's modal class exposes a few events for hooking into modal functionality. All modal events are fired at the modal itself (i.e. at the `<div class="modal">`).
 
 <table class="table">
   <thead>

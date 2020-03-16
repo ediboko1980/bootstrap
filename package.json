@@ -85,7 +85,9 @@
     "type": "opencollective",
     "url": "https://opencollective.com/bootstrap"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1"
+  },
   "peerDependencies": {
     "popper.js": "^1.16.0"
   },
