@@ -6,10 +6,6 @@ group: getting-started
 toc: true
 ---
 
-## Installing Bootstrap
-
-[Install bootstrap]({{< docsref "/getting-started/download#npm" >}}) as a Node.js module using npm.
-
 ## Importing JavaScript
 
 Import [Bootstrap's JavaScript]({{< docsref "/getting-started/javascript" >}}) by adding this line to your app's entry point (usually `index.js` or `app.js`):

@@ -4,8 +4,6 @@ title: Introduction
 description: This guide will help you to set up and work with this theme.
 group: getting-started
 aliases:
-  - "/docs/4.3/getting-started/"
-  - "/docs/getting-started/"
   - "/getting-started/"
 toc: true
 ---

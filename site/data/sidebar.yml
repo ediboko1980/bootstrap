@@ -1,8 +1,8 @@
 - title: Getting started
   pages:
     - title: Introduction
-    - title: Download
-    - title: Contents
+    - title: File structure
+    - title: Gulp commands
     - title: Browsers & devices
     - title: JavaScript
     - title: Theming
