@@ -22,10 +22,6 @@
         font-weight: $navbar-nav-link-font-weight;
         @include transitions(.8s, $transition-bezier-card);
 
-        @include media-breakpoint-down(md) {
-            font-size: 1.2rem;
-        }
-
         .nav-link-inner-text {
             margin-left: .25rem;
         }

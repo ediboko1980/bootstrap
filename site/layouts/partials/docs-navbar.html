@@ -1,5 +1,5 @@
 <header class="navbar navbar-nav navbar-expand navbar-dark navbar-theme-primary">
-  <div class="container flex-wrap flex-md-nowrap px-md-4">
+  <div class="container px-4">
     <div class="d-flex align-items-center">
       <a class="navbar-brand mr-4" href="{{ .Site.BaseURL }}" aria-label="Rocket Documentation">
         <img src="{{ .Site.BaseURL }}/assets/brand/rocket.svg" width="30" height="30" alt="Rocket logo">
@@ -21,9 +21,13 @@
       </div>
     </div>
 
+    <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3 order-3 ml-auto" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+      {{ partial "icons/menu.svg" (dict "width" "30" "height" "30") }}
+    </button>
+
     <div>
-      <a class="btn btn-md btn-secondary animate-up-2 ml-3 d-none d-md-inline-block" href="{{ .Site.Params.product_page }}" target="_blank">Download</a>
-      <a class="btn btn-md btn-outline-white animate-up-2 ml-3" href="{{ .Site.Params.live_preview }}" target="_blank">Demo Rocket</a>
+      <a class="btn btn-md btn-secondary animate-up-2 ml-3 d-none d-md-inline-block" href="{{ .Site.Params.product_page }}" target="_blank">Purchase now</a>
+      <a class="btn btn-md btn-outline-white animate-up-2 ml-3 d-none d-md-inline-block" href="{{ .Site.Params.live_preview }}" target="_blank">Demo Rocket</a>
     </div>
   </div>
 </header>
