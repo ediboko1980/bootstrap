@@ -19,7 +19,7 @@
 
 .btn-clipboard {
   position: absolute;
-  top: 1.5rem;
+  top: 2rem;
   right: 1rem;
   z-index: 10;
   display: block;
@@ -34,4 +34,9 @@
     color: $white;
     background-color: $primary;
   }
+}
+
+
+.bd-example + .bd-clipboard .btn-clipboard {
+  top: 3rem;
 }

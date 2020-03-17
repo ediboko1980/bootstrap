@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Introduction
-description: This guide will help you to set up and work with this theme.
+description: This guide will help you get started with Rocket and give you an overview of the integrated UI Kit
 group: getting-started
 aliases:
   - "/getting-started/"
