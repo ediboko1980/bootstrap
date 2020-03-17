@@ -2,7 +2,7 @@
   pages:
     - title: Introduction
     - title: File structure
-    - title: Gulp commands
+    - title: Build tools
     - title: Changelog
 
 - title: Components
@@ -11,17 +11,13 @@
     - title: Alerts
     - title: Badges
     - title: Blog cards
-    - title: Carousels
     - title: Breadcrumbs
     - title: Buttons
-    - title: Collapse
     - title: Counters
     - title: Forms
-    - title: Icon boxes
     - title: Modals
     - title: Navbars
     - title: Navs
-    - title: Owl carousels
     - title: Pagination
     - title: Popovers
     - title: Pricing cards
@@ -32,4 +28,3 @@
     - title: Timelines
     - title: Tooltips
     - title: Typography
-    - title: Widgets
