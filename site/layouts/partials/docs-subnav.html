@@ -7,8 +7,27 @@
     <!-- {{ partial "docs-versions" . }} -->
 
     <div class="d-flex w-100 justify-content-between">
-      <a class="btn btn-sm btn-secondary animate-up-2" href="{{ .Site.Params.product_page }}" target="_blank">Download</a>
-      <a class="btn btn-sm btn-outline-primary animate-up-2 ml-3" href="{{ .Site.Params.live_preview }}" target="_blank">Demo Rocket</a>
+      <ul class="flex-row list-style-none mr-3 d-flex d-md-none">
+        <li class="mr-3">
+          <a href="https://www.facebook.com/themesberg/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Themesberg on Facebook" data-original-title="Like us on Facebook">
+            <i class="fab fa-facebook text-primary"></i>
+          </a>
+        </li>
+        <li class="mr-3">
+          <a href="https://twitter.com/themesberg" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Themesberg on Twitter" data-original-title="Follow us on Twitter ❤️">
+            <i class="fab fa-twitter text-primary"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/themesberg" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Themesberg on Github" data-original-title="Star us on Github">
+            <i class="fab fa-github text-primary"></i>
+          </a>
+        </li>
+      </ul>
+      <div>
+        <a class="btn btn-sm btn-secondary animate-up-2" href="{{ .Site.Params.product_page }}" target="_blank">Download</a>
+        <a class="btn btn-sm btn-outline-primary animate-up-2 ml-2" href="{{ .Site.Params.live_preview }}" target="_blank">Demo Rocket</a>
+      </div>
     </div>
 
     <!-- <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3 order-3 ml-auto" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
