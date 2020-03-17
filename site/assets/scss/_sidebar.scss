@@ -4,7 +4,7 @@
   @include media-breakpoint-up(md) {
     @supports (position: sticky) {
       position: sticky;
-      top: 5rem;
+      top: 3rem;
       height: subtract(100vh, 7rem);
       overflow-y: auto;
     }

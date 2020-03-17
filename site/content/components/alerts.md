@@ -1,182 +1,125 @@
 ---
 layout: docs
 title: Alerts
-description: Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.
+description: Use alerts to provide contextual feedback to your users based on their input and behaviour
 group: components
 aliases:
   - "/components/"
 toc: true
 ---
 
-## Examples
+## Alerts
 
-Alerts are available for any length of text, as well as an optional close button. For proper styling, use one of the eight **required** contextual classes (e.g., `.alert-success`). For inline dismissal, use the [alerts JavaScript plugin](#dismissing).
-
-{{< example >}}
-{{< alerts.inline >}}
-{{- range (index $.Site.Data "theme-colors") }}
-<div class="alert alert-{{ .name }}" role="alert">
-  A simple {{ .name }} alert—check it out!
-</div>{{- end -}}
-{{< /alerts.inline >}}
-{{< /example >}}
-
-{{< callout info >}}
-{{< partial "callout-warning-color-assistive-technologies.md" >}}
-{{< /callout >}}
-
-### Link color
-
-Use the `.alert-link` utility class to quickly provide matching colored links within any alert.
+Alerts can be used to show your users error, success, informational or warning messages. Use the color variables such as `alert-primary` or `alert-secondary` to add your preferred colors:
 
 {{< example >}}
-{{< alerts.inline >}}
-{{- range (index $.Site.Data "theme-colors") }}
-<div class="alert alert-{{ .name }}" role="alert">
-  A simple {{ .name }} alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-</div>{{ end -}}
-{{< /alerts.inline >}}
-{{< /example >}}
-
-### Additional content
-
-Alerts can also contain additional HTML elements like headings, paragraphs and dividers.
-
-{{< example >}}
+<div class="alert alert-primary" role="alert">
+    <span class="alert-inner--text">This is a primary  alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</span>
+</div>
+<div class="alert alert-secondary" role="alert">
+    <span class="alert-inner--text">This is a secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</span>
+</div>
 <div class="alert alert-success" role="alert">
-  <h4 class="alert-heading">Well done!</h4>
-  <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-  <hr>
-  <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+    <span class="alert-inner--text">This is a success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</span>
+</div>
+<div class="alert alert-info" role="alert">
+    <span class="alert-inner--text">This is a info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</span>
+</div>
+<div class="alert alert-warning" role="alert">
+    <span class="alert-inner--text">This is a warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</span>
+</div>
+<div class="alert alert-danger" role="alert">
+    <span class="alert-inner--text">This is a danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</span>
 </div>
 {{< /example >}}
 
+## Alerts with icons
 
-### Dismissing
-
-Using the alert JavaScript plugin, it's possible to dismiss any alert inline. Here's how:
-
-- Be sure you've loaded the alert plugin, or the compiled Bootstrap JavaScript.
-- Add a [close button]({{< docsref "/components/close-button" >}}) and the `.alert-dismissible` class, which adds extra padding to the right of the alert and positions the close button.
-- On the close button, add the `data-dismiss="alert"` attribute, which triggers the JavaScript functionality. Be sure to use the `<button>` element with it for proper behavior across all devices.
-- To animate alerts when dismissing them, be sure to add the `.fade` and `.show` classes.
-
-You can see this in action with a live demo:
+The following alerts are coupled with descriptive icons:
 
 {{< example >}}
+<div class="alert alert-primary alert-dismissible fade show" role="alert">
+    <span class="alert-inner--icon"><i class="fas fa-brain"></i></span>
+    <span class="alert-inner--text"><strong>Primary alert!</strong> You successfully read this important alert message.</span>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="alert alert-secondary alert-dismissible fade show" role="alert">
+    <span class="alert-inner--icon"><i class="far fa-dizzy"></i></span>
+    <span class="alert-inner--text"><strong>Secondary note!</strong> You successfully read this important alert message.</span>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+    <span class="alert-inner--icon"><i class="far fa-thumbs-up"></i></span>
+    <span class="alert-inner--text"><strong>Well done!</strong> You successfully read this important alert message.</span>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="alert alert-info alert-dismissible fade show" role="alert">
+    <span class="alert-inner--icon"><i class="far fa-bell"></i></span>
+    <span class="alert-inner--text"><strong>Heads up!</strong>This alert needs your attention, but it's not super important.</span>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
 <div class="alert alert-warning alert-dismissible fade show" role="alert">
-  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
+    <span class="alert-inner--icon"><i class="fas fa-exclamation-circle"></i></span>
+    <span class="alert-inner--text"><strong>Warning!</strong> Better check yourself, you're not looking too good.</span>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <span class="alert-inner--icon"><i class="fas fa-fire"></i></span>
+    <span class="alert-inner--text"><strong>Oh snap!</strong> Change a few things up and try submitting again.</span>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
 </div>
 {{< /example >}}
 
-## JavaScript behavior
+## Alerts with extra content
 
-### Triggers
+The following alerts are useful when you want to give more information and context to your users:
 
-Enable dismissal of an alert via JavaScript:
-
-{{< highlight js >}}
-var alertList = document.querySelectorAll('.alert')
-alertList.forEach(function (alert) {
-  new bootstrap.Alert(alert)
-})
-{{< /highlight >}}
-
-Or with `data` attributes on a button **within the alert**, as demonstrated above:
-
-{{< highlight html >}}
-<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-  <span aria-hidden="true">&times;</span>
-</button>
-{{< /highlight >}}
-
-Note that closing an alert will remove it from the DOM.
-
-### Methods
-
-You can create an alert instance with the alert constructor, for example:
-
-{{< highlight js >}}
-var myAlert = document.getElementById('myAlert')
-var bsAlert = new bootstrap.Alert(myAlert)
-{{< /highlight >}}
-
-This makes an alert listen for click events on descendant elements which have the `data-dismiss="alert"` attribute. (Not necessary when using the data-api's auto-initialization.)
-
-<table class="table">
-  <thead>
-    <tr>
-      <th>Method</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <code>close</code>
-      </td>
-      <td>
-        Closes an alert by removing it from the DOM. If the <code>.fade</code> and <code>.show</code> classes are present on the element, the alert will fade out before it is removed.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <code>dispose</code>
-      </td>
-      <td>
-        Destroys an element's alert.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <code>getInstance</code>
-      </td>
-      <td>
-        Static method which allows you to get the alert instance associated to a DOM element, you can use it like this: <code>bootstrap.Alert.getInstance(alert)</code>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-{{< highlight js >}}
-var alertNode = document.querySelector('.alert')
-var alert = bootstrap.Alert.getInstance(alertNode)
-alert.close()
-{{< /highlight >}}
-
-### Events
-
-Rocket's alert plugin exposes a few events for hooking into alert functionality.
-
-<table class="table">
-  <thead>
-    <tr>
-      <th>Event</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>close.bs.alert</code></td>
-      <td>
-        Fires immediately when the <code>close</code> instance method is called.
-      </td>
-    </tr>
-    <tr>
-      <td><code>closed.bs.alert</code></td>
-      <td>
-        Fired when the alert has been closed and CSS transitions have completed.
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-{{< highlight js >}}
-var myAlert = document.getElementById('myAlert')
-myAlert.addEventListener('closed.bs.alert', function () {
-  // do something…
-})
-{{< /highlight >}}
+{{< example >}}
+<div class="alert alert-primary" role="alert">
+    <span class="alert-inner--icon"><i class="far fa-dizzy"></i></span>
+    <h5 class="alert-heading">Secondary Info!</h5>
+    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+    <hr>
+    <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+</div>
+<div class="alert alert-secondary" role="alert">
+    <span class="alert-inner--icon"><i class="far fa-thumbs-up"></i></span>
+    <h5 class="alert-heading">Well done!</h5>
+    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+    <hr>
+    <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+</div>
+<div class="alert alert-info" role="alert">
+    <span class="alert-inner--icon"><i class="far fa-bell"></i></span>
+    <h5 class="alert-heading">Heads up!</h5>
+    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+    <hr>
+    <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+</div>
+<div class="alert alert-warning" role="alert">
+    <span class="alert-inner--icon"><i class="fas fa-exclamation-circle"></i></span>
+    <h5 class="alert-heading">Warning!</h5>
+    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+    <hr>
+    <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+</div>
+<div class="alert alert-danger" role="alert">
+    <span class="alert-inner--icon"><i class="fas fa-fire"></i></span>
+    <h5 class="alert-heading">Danger!</h5>
+    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+    <hr>
+    <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+</div>
+{{< /example >}}

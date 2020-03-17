@@ -8,7 +8,7 @@ aliases:
 toc: true
 ---
 
-## How to set up the project
+## Quick start
 
 This template requires Node and Gulp CLI. Please follow these steps to install the required technologies:
 
