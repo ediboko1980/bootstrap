@@ -1,5 +1,6 @@
 <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Main navigation">
   {{- $url := split .Permalink "/" -}}
+  {{- $base_url := .Site.BaseURL -}}
   {{- $page_slug := index $url (sub (len $url) 2) -}}
 
   <ul class="list-unstyled">
@@ -25,7 +26,7 @@
         {{- range $doc := $group.pages -}}
           {{- $doc_slug := $doc.title | urlize }}
           <li{{ if and $active_group (eq $page_slug $doc_slug) }} class="active bd-sidenav-active"{{ end }}>
-            <a href="/{{ $group_slug }}/{{ $doc_slug }}/"{{ if and $active_group (eq $page_slug $doc_slug) }} aria-current="page"{{ end }}>
+            <a href="{{ $base_url }}{{ $group_slug }}/{{ $doc_slug }}/"{{ if and $active_group (eq $page_slug $doc_slug) }} aria-current="page"{{ end }}>
               {{- $doc.title -}}
             </a>
           </li>
