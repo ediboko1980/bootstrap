@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Overview
-description: Start developing awesome SaaS websites using this guide. Learn more about how to get started and use the components within Rocket.
+description: Start developing awesome SaaS websites using this guide. Learn more about how to get started and use the components within Rocket Bootstrap SaaS template.
 group: getting-started
 aliases:
   - "/getting-started/"

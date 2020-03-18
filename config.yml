@@ -45,7 +45,7 @@ params:
   base_path:             "docs/rocket/"
   description:          "SaaS Bootstrap Template Documentation"
   authors:              "Themesberg"
-  social_image_path:    assets/rocket-preview.png
+  social_image_path:    assets/img/rocket-preview.png
   social_logo_path:     assets/brand/themesberg.png
 
   product_page: "https://themesberg.com/product/bootstrap-themes/rocket-saas-bootstrap-template"
