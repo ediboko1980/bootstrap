@@ -2,9 +2,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 
 {{ if eq hugo.Environment "production" -}}
-<script src="/dist/js/bootstrap.min.js" integrity="{{ .Site.Params.cdn.js_bundle_hash }}" crossorigin="anonymous"></script>
+<script src="{{ .Site.BaseURL }}dist/js/bootstrap.min.js"></script>
 {{ else -}}
-<script src="/dist/js/bootstrap.js"></script>
+<script src="{{ .Site.BaseURL }}dist/js/bootstrap.js"></script>
 {{- end }}
 
 {{ if eq .Page.Layout "docs" -}}
