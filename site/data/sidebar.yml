@@ -8,6 +8,12 @@
     - title: Build tools
     - title: Changelog
 
+- title: Foundation
+  pages:
+    - title: Colors
+    - title: Icons
+    - title: Typography
+
 - title: Components
   pages:
     - title: Accordions
@@ -26,4 +32,3 @@
     - title: Tabs
     - title: Timelines
     - title: Tooltips
-    - title: Typography
