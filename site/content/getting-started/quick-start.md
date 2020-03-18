@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Introduction
+title: Quick Start
 description: This guide will help you get started with Rocket and give you an overview of the integrated UI Kit
 group: getting-started
 aliases:
@@ -54,14 +54,3 @@ gulp build:dist
 {{< /highlight >}}
 
 This will generate a folder `dist` which will have minified CSS, Html and Javascript.
-
-## Getting support
-
-We offer 6 months of support by default for each purchased template. Please [Contact us](https://themesberg.com/contact) and we'll get back to you in no time!
-
-## Community
-
-- Follow [@themesberg on Twitter](https://twitter.com/{{< param twitter >}}).
-- Follow [Themesberg on Facebook](https://facebook.com/{{< param facebook >}}).
-- Read and subscribe to [The Official Themesberg Blog]({{< param blog >}}).
-- Follow latest open source projects on our [Github Page]({{< param repo >}})
