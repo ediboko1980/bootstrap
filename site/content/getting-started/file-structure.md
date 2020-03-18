@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: File structure
-description: This guide will help you to set up and work with this theme.
+description: Learn more about the file structure of Rocket
 group: getting-started
 toc: true
 ---

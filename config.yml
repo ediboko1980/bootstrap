@@ -1,6 +1,6 @@
 languageCode:           "en"
 title:                  "Rocket Docs"
-baseURL:                "https://themesberg.com/rocket/docs/"
+baseURL:                "http://localhost:9001/"
 enableInlineShortcodes: true
 
 markup:
