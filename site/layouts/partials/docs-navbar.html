@@ -1,21 +1,18 @@
 <header class="navbar navbar-nav navbar-expand navbar-dark navbar-theme-primary">
   <div class="container px-3 px-md-4">
     <div class="d-flex align-items-center">
-      <a class="navbar-brand mr-4" href="{{ .Site.BaseURL }}" aria-label="Rocket Documentation">
-        <img src="{{ .Site.BaseURL }}assets/brand/rocket.svg" width="20" height="20" alt="Rocket logo">
-        <span class="ml-2">Rocket docs</span>
+      <a class="navbar-brand mr-4" href="{{ .Site.BaseURL }}/getting-started/overview" aria-label="Impact Documentation">
+        <img src="{{ .Site.BaseURL }}assets/brand/light.svg" height="30" alt="Impact logo">
+        <span class="ml-2">Docs</span>
       </a>
 
       <div class="navbar-nav-scroll order-md-0 justify-content-start d-none d-md-flex">
         <ul class="navbar-nav bd-navbar-nav flex-row">
           <li class="nav-item">
-            <a class="nav-link" href="https://themesberg.com/products/bootstrap-themes" target="_blank" rel="noopener">Themes</a>
+            <a class="nav-link" href="#" target="_blank" rel="noopener">Live preview</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ .Site.Params.blog }}" target="_blank" rel="noopener">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://themesberg.com/contact" target="_blank" rel="noopener">Support</a>
+            <a class="nav-link" href="#" target="_blank" rel="noopener">Support</a>
           </li>
         </ul>
       </div>
@@ -43,8 +40,8 @@
           </a>
         </li>
       </ul>
-      <a class="btn btn-md btn-secondary animate-up-2 ml-3 d-none d-md-inline-block" href="{{ .Site.Params.product_page }}" target="_blank">Purchase</a>
-      <a class="btn btn-md btn-outline-white animate-up-2 ml-3 d-none d-md-inline-block" href="{{ .Site.Params.live_preview }}" target="_blank">Live preview</a>
+      <a class="btn btn-md btn-secondary animate-up-2 ml-3 d-none d-md-inline-block" href="{{ .Site.Params.product_page }}" target="_blank"><i class="fas fa-download mr-2"></i>Buy now</a>
+      <a class="btn btn-md btn-outline-white animate-up-2 ml-3 d-none d-md-inline-block" href="{{ .Site.Params.live_preview }}" target="_blank">Try free demo</a>
     </div>
   </div>
 </header>

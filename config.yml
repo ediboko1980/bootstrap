@@ -1,6 +1,6 @@
 languageCode:           "en"
-title:                  "Rocket Docs"
-baseURL:                "https://themesberg.com/docs/rocket/"
+title:                  "Impact Docs"
+baseURL:                "http://localhost:9001"
 enableInlineShortcodes: true
 
 markup:
@@ -42,27 +42,27 @@ module:
       target:           static/favicon.ico
 
 params:
-  base_path:             "docs/rocket/"
-  description:          "SaaS Bootstrap Template Documentation"
-  authors:              "Themesberg"
+  base_path:             "/"
+  description:          ""
+  authors:              "Creative Tim & Themesberg"
   social_image_path:    assets/img/rocket-preview.png
   social_logo_path:     assets/brand/themesberg.png
 
-  product_page: "https://themesberg.com/product/bootstrap-themes/rocket-saas-bootstrap-template"
-  live_preview: "https://demo.themesberg.com/rocket/index.html"
+  product_page: "#"
+  live_preview: "#"
 
   current_version:      "1.0.0"
   current_ruby_version: "4.3.1"
   rfs_version:          "9.0.2"
   docs_version:         "1.0"
-  repo:                 "https://github.com/themesberg"
-  twitter:              "themesberg"
-  facebook:              "themesberg"
+  repo:                 "https://github.com/creativetimofficial"
+  twitter:              "CreativeTim"
+  facebook:              "CreativeTim"
   slack:                "https://bootstrap-slack.herokuapp.com/"
   opencollective:       "https://opencollective.com/bootstrap"
-  blog:                 "https://themesberg.com/blog"
+  blog:                 "https://www.creative-tim.com/blog/"
   expo:                 "https://expo.getbootstrap.com/"
-  themes:               "https://themesberg.com/products/bootstrap-themes"
+  themes:               "https://www.creative-tim.com/templates"
   icons:                "https://icons.getbootstrap.com/"
 
   download:
