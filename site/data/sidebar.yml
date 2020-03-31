@@ -1,0 +1,34 @@
+- title: Getting started
+  pages:
+    - title: Overview
+    - title: Download
+    - title: Quick start
+    - title: License
+    - title: File structure
+    - title: Build tools
+    - title: Changelog
+
+- title: Foundation
+  pages:
+    - title: Colors
+    - title: Icons
+    - title: Typography
+
+- title: Components
+  pages:
+    - title: Accordions
+    - title: Alerts
+    - title: Badges
+    - title: Blog cards
+    - title: Breadcrumbs
+    - title: Buttons
+    - title: Forms
+    - title: Modals
+    - title: Navbars
+    - title: Pagination
+    - title: Popovers
+    - title: Pricing cards
+    - title: Profile cards
+    - title: Tabs
+    - title: Timelines
+    - title: Tooltips
